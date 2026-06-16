@@ -23,17 +23,17 @@
     <div class="container">
     <h1> Registration Form: </h1>
 
-    <form>
+    <form id = "contactForm">
         <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
+        <input type="text" id="fname" name="fname" required><br>
         <label for="lname">Last Nmae:</label><br>
-        <input type="text" id="lname" name="lnam"><br><br>
+        <input type="text" id="lname" name="lname" required><br><br>
         <input type="submit" value="Submit" class="button">
     </form>
 
     <h2> Donation Form:</h2>
 
-    <form action="/submit_donation" method="post">
+    <form action="/submit_donation" method="post" id = "donationForm">
 
         <label for="email">Email Address:</label><br>
         <input type="email" id="email" name="email" required><br><br>
@@ -55,9 +55,12 @@
     </form>
     </div>
 
+    <button id = "topBtn">Top</button>
+
     <footer>
-        <p>&copy; 2026 CANSA</p>
+        <p>&copy; <span id = "year"></span> CANSA</p>
     </footer>
-    
+
+<script src="script.js"></script>
 </body>
 </html>

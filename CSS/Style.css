@@ -119,3 +119,16 @@ footer {
     padding: 15px;
     margin-top: 40px;
 }
+
+/* BACK-TO-TOP BUTTON */
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: lightblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: none;
+}
