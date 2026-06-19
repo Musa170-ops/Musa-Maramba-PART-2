@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
-    <title>Document</title>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "CANSA, cancer awareness, cancer support, donations, South Africa, non-profit">
+    <meta name = "description" content = "CANSA is a non-profit organization dedicated to cancer awareness, support, education and research in South Africa.">
+    <link rel = "stylesheet" type = "text/css" href = "./CSS/Style.css">
+    <title>CANSA (Cancer Assosiation of South Africa) | Services</title>
 </head>
 <body>
 
     <header>
            <nav>
-               <div class="logo">CANSA</div>
+               <div class = "logo">CANSA</div>
                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="inquiry.html">Inquiry</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href ="index.html">Home</a></li>
+                  <li><a href = "about.html">About Us</a></li>
+                  <li><a href = "inquiry.html">Inquiry</a></li>
+                  <li><a href = "contact.html">Contact</a></li>
                </ul>
             </nav>
     </header>
@@ -23,7 +25,9 @@
     <div class="container">
     <h1> List of Our Services as an Organisation:</h1>
 
-    <ol>
+    <input type = "text" id = "searchBox" placeholder = "Search services...">
+
+    <ol id = "serviceList">
         <li> Health Awareness Programmes</li>
         <li> Mobile Health Clinics</li>
         <li> Promote Early Detection</li>
@@ -32,7 +36,12 @@
     </div>
 
     <img>
-    <img src="Images/Cancer Standing Together.webp"alt="Cancer People Standing Together" class="page-image">
+    <img src = "Images/Cancer Standing Together.webp" alt = "Cancer People Standing Together" class = "page-image">
+    
+    <div id = "lightbox">
+        <span id = "closeBtn">&times;</span>
+        <img id = "lightboxImg" src = "" alt = "Large Image">
+    </div>
     
     <button id = "topBtn">Top</button>
 
@@ -40,6 +49,6 @@
         <p>&copy; <span id = "year"></span> CANSA</p>
     </footer>
 
-<script src="script.js"></script>
+<script src = "script.js"></script>
 </body>
 </html>

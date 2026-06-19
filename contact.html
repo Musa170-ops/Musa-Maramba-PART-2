@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
-    <title>Document</title>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "CANSA, cancer awareness, cancer support, donations, South Africa, non-profit">
+    <meta name = "description" content = "CANSA is a non-profit organization dedicated to cancer awareness, support, education and research in South Africa.">
+    <link rel = "stylesheet" type = "text/css" href = "./CSS/Style.css">
+    <title>CANSA (Cancer Assosiation of South Africa) | Contact Us</title>
 </head>
 <body>
 
     <header>
            <nav>
-               <div class="logo">CANSA</div>
+               <div class = "logo">CANSA</div>
                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="services.html">Sevices</a></li>
-                  <li><a href="inquiry.html">Inquiry</a></li>
+                  <li><a href = "index.html">Home</a></li>
+                  <li><a href = "about.html">About Us</a></li>
+                  <li><a href = "services.html">Sevices</a></li>
+                  <li><a href = "inquiry.html">Inquiry</a></li>
                </ul>
            </nav>
     </header>
  
-    <div class="container">
+    <div class = "container">
     <h1> Email, Phone or WhatsApp Us</h1>
 
     <h2> Contact our CANSA help desk for assistance </h2>
@@ -42,14 +44,24 @@
     </div>
 
     <img>
-    <img src="Images/CANSA Logo.webp"alt="CANSA" class="page-image">
+    <img src = "Images/CANSA Logo.webp" alt = "CANSA" class = "page-image">
 
+    <div id = "lightbox">
+        <span id = "closeBtn">&times;</span>
+        <img id = "lightboxImg" src = "" alt = "Large Image">
+    </div>
+    
     <button id = "topBtn">Top</button>
+
+    <div id = "contentArea">
+        <p> Click the button for more information. </p>
+    </div>
+    <button id = "infoBtn"> Learn More </button>
 
     <footer>
         <p>&copy; <span id = "year"></span> CANSA</p>
     </footer>
 
-<script src="script.js"></script>
+<script src = "script.js"></script>
 </body>
 </html>

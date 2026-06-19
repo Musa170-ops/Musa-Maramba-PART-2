@@ -81,3 +81,44 @@ topBtn.onclick = function() {
         behaviour: "smooth"
     });
 };
+
+/* GALLERY LIGHTBOX */
+const images = document.querySelectorAll(".page-image");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeBtn = document.getElementById("closeBtn");
+
+images.forEach(function(image) {
+    image.addEventListener("click", function() {
+        lightbox.style.display = "flex";
+        lightboxImg.src = this.src;
+    });
+});
+
+closeBtn.addEventListener("click", function() {
+    lightbox.style.display = "none";
+});
+
+/* DYNAMIC CONTENT */
+document.getElementById("infoBtn").addEventListener("click", function() {
+    document.getElementById("contentArea").innerHTML = "<h3>CANSA's Mission</h3><p>CANSA provides cancer awareness, education, support and research initiatives.</p>"
+});
+
+/* DYNAMIC SEARCH FEATURE */
+const searchBox = document.getElementById("searchBox");
+
+searchBox.addEventListener("keyup", function() {
+    let filter = searchBox.value.toLowerCase();
+    let items = document.querySelectorAll("#serviceList li");
+    
+    items.forEach(function(item) {
+        let text = item.textContent.toLowerCase();
+
+        if(text.include(filter)) {
+            item.style.display = "";
+        }
+        else {
+            item.style.display = "none";
+        }
+    });
+});

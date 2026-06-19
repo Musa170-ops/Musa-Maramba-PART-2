@@ -1,41 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./CSS/Style.css">
-    <title>CANSA (Cancer Assosiation of South Africa)</title>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "CANSA, cancer awareness, cancer support, donations, South Africa, non-profit">
+    <meta name = "description" content = "CANSA is a non-profit organization dedicated to cancer awareness, support, education and research in South Africa.">
+    <link rel = "stylesheet" type = "text/css" href = "./CSS/Style.css">
+    <title>CANSA (Cancer Assosiation of South Africa) | Home</title>
 </head>
 <body>
-    <section class="hero">
-    <h1 class="border">Welcome to the CANSA website.</h1>
+    <section class = "hero">
+    <h1 class = "border">Welcome to the CANSA website.</h1>
     </section>
 
     <header>
            <nav>
-               <div class="logo">CANSA</div>
+               <div class = "logo">CANSA</div>
                <ul>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="inquiry.html">Inquiry</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href = "about.html">About Us</a></li>
+                  <li><a href = "services.html">Services</a></li>
+                  <li><a href = "inquiry.html">Inquiry</a></li>
+                  <li><a href = "contact.html">Contact</a></li>
                </ul>
             </nav>
     </header>
     
-    <div class="container">
+    <div class = "container">
     <p>It is the mission of this organisation to find new ways, through research and education, to help people who are affected by this disastrous disease. CANSA is determined to do this by all means necessary. Connecting people affected by this ugly disease with information, help and emotional support.</p>
     </div>
 
     <img>
-        <img src="Images/Cancer Patient.webp"alt="Cancer Patient" class="page-image">
+        <img src = "Images/Cancer Patient.webp" alt = "Cancer Patient" class = "page-image">
+
+    <div id = "lightbox">
+        <span id = "closeBtn">&times;</span>
+        <img id = "lightboxImg" src = "" alt = "Large Image">
+    </div>
     
     <button id = "topBtn">Top</button>
+
+    <div id = "contentArea">
+        <p> Click the button for more information. </p>
+    </div>
+    <button id = "infoBtn"> Learn More </button>
 
     <footer>
         <p>&copy; <span id = "year"></span> CANSA</p>
     </footer>
 
-<script src="script.js"></script>
+<script src = "script.js"></script>
 </body>
 </html>
